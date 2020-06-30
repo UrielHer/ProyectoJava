@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Actividad 7</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/estilos.css" type="text/css"/>
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Seleccione una opción</h1>
+			<div class="navbar">
+				<a href="index.html" class="opciones">Inicio</a>
+				<a href="contenedores.html" class="opciones">Contenedores</a>
+				<a href="zona.html" class="opciones">Zona</a>
+				<a href="suma.html" class="opciones">Suma</a>
+				<a href="if_else_case.html" class="opciones">If else case</a>
+				<a href="while_for.html" class="opciones">While for</a>
+				<a href="arreglos.html" class="opciones">Arreglos</a>
+				<a href="estilos_valor.html" class="opciones">Estilos valor</a>
+			</div>
+		</header>
+
+		<section class="contenedor top">
+			<select id="temas" onchange="opcSeleccionado()">
+				<option value="0" selected>Seleccione...</option>
+				<option value="impares">Impares del 0 al 100</option> 
+				<option value="imprimir">Imprimir astericos</option>
+				<option value="tablas">Tablas del 1 al 10</option>
+			</select>
+
+			<article id="impares" class="contenedor1">
+				<h3>Presione el boton para mostrar los numeros impares del 0 al 100<h3>
+				<input type="button" value="Mostrar" onclick="mostrarImpares()"/>
+			</article>
+			
+			<article id="imprimir" class="contenedor1">
+				<h3>Imprimir numero de astericos<h3>
+				<input type="number" id="n1" placeholder="Introduce numero"/>
+				<input type="button" value="Calcular" onclick="leerAstericos()"/>
+			</article>
+			
+			<article id="tablas" class="contenedor1">
+				<h3>Mostrar tablas<h3>
+				<input type="button" value="Calcular" onclick="mostrarTablas()"/>
+			</article>
+
+			<p id="resultado" class="res">Selecciona una opción</p>
+		</section >
+
+		<footer>
+			<h2>Carlos Uriel Hernández Calderón EVN 304</h2>
+		</footer>
+			
+	</body>
+</html>

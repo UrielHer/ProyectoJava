@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Actividad 7</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/estilos.css" type="text/css"/>
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Seleccione una opción</h1>
+			<div class="navbar">
+				<a href="index.html" class="opciones">Inicio</a>
+				<a href="contenedores.html" class="opciones">Contenedores</a>
+				<a href="zona.html" class="opciones">Zona</a>
+				<a href="suma.html" class="opciones">Suma</a>
+				<a href="if_else_case.html" class="opciones">If else case</a>
+				<a href="while_for.html" class="opciones">While for</a>
+				<a href="arreglos.html" class="opciones">Arreglos</a>
+				<a href="estilos_valor.html" class="opciones">Estilos valor</a>
+			</div>
+		</header>
+
+		<section class="contenedor top">
+
+		<script type="text/javascript">
+			var o=0
+			function Boton() {
+				if(o==0){
+					document.getElementById("email").style.display="none";
+					document.getElementById("pass").style.display="none";
+					document.getElementById("sub").style.display="none";
+					o=1
+					document.getElementById("ocultar").value="Mostrar";
+				}
+				else{
+					document.getElementById("email").style.display="inline";
+					document.getElementById("pass").style.display="inline";
+					document.getElementById("sub").style.display="inline";
+					o=0;
+					document.getElementById("ocultar").value="Ocultar";
+					}
+				}		
+		</script>
+
+
+
+		<form action="">
+			<input type="button" Id="ocultar" value="Ocultar" onclick="Boton()">
+			<br>
+			<br>
+			<input type="email" Id="email" placeholder="Correo">
+			<br>
+			<input type="password" Id="pass" placeholder="Contraseña">
+			<br>
+			<br>
+			<input type="submit" Id="sub">
+		</form>
+
+		</section>
+	
+		<footer>
+			<h2>Carlos Uriel Hernández Calderón EVN 304</h2>
+		</footer>
+			
+	</body>
+</html>
